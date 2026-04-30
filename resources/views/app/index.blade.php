@@ -9,5 +9,18 @@
 @endsection
 
 @section('content')
-    <h1>VISTA INICIAL POST LOGIN</h1>
+    <div>{{ Auth::user()->name }}</div>
+
+    <!-- Authentication -->
+    <form method="POST" action="{{ route('logout') }}">
+        @csrf
+
+        <button type="submit">
+            Salir
+        </button>
+    </form>
+    <div>
+        <h1>VISTA INICIAL POST LOGIN</h1>
+    </div>
+   
 @endsection
