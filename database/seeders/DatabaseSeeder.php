@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@squo.com',
             'password' => Hash::make('admin'), // Contraseña: admin,
-            'role' => 'a',
+            'rol' => 'a',
+            'cargo' => 'Administrador',
         ]);
 
         // Usuario Test
@@ -31,7 +32,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test',
             'email' => 'test@asquo.com',
             'password' => Hash::make('test'), // Contraseña: test,
-            'role' => 't',
+            'rol' => 't',
+            'cargo' => 'Tester',
         ]);
 
         // Usuario
@@ -39,7 +41,8 @@ class DatabaseSeeder extends Seeder
             'name' => 'Usuario',
             'email' => 'user@asquo.com',
             'password' => Hash::make('user'), // Contraseña: test,
-            'role' => 'u',
+            'rol' => 'u',
+            'cargo' => 'Usuario Comun',
         ]);
     }
 }
