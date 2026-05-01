@@ -13,6 +13,12 @@ Route::group(["prefix" => "/app", 'middleware' => ['auth','revalidate']], functi
     // Vista principal del dashboard
     Route::get('/', [App\Http\Controllers\AppController::class, 'index'])->name('appIndex');
 
+    // Grupo de rutas para seccion Clientes
+    Route::group(["prefix" => "/clientes", 'middleware' => ['auth','revalidate']], function () {
+        // Vista principal de clientes
+        Route::get('/', [App\Http\Controllers\ClienteController::class, 'index'])->name('clienteIndex');
+    });
+
     // Gestión del Perfil
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

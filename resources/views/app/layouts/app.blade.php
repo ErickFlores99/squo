@@ -55,16 +55,14 @@
                     <div class="row align-items-center">
                         <div class="col-md-12">
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{ route('appIndex')}}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('appIndex') }}">Home</a></li>
                                 @yield('breadcrumbs')
                                 <li class="breadcrumb-item" aria-current="page">@yield('title','404')</li>
-                               
-                               
                             </ul>
                         </div>
                         <div class="col-md-12">
                             <div class="page-header-title">
-                                <h2 class="mb-0">Home</h2>
+                                <h2 class="mb-0">@yield('title','404')</h2>
                             </div>
                         </div>
                     </div>
@@ -81,7 +79,7 @@
             <div class="row">
                 <div class="col-auto my-1">
                     <ul class="list-inline footer-link mb-0">
-                        <li class="list-inline-item"><a href="{{ route('appIndex')}}">Home</a></li>
+                        <li class="list-inline-item"><a href="{{ route('appIndex') }}">Home</a></li>
                     </ul>
                 </div>
             </div>
