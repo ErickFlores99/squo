@@ -10,7 +10,7 @@
         <div class="navbar-content">
             <ul class="pc-navbar">
                 <li class="pc-item">
-                    <a href="#" class="pc-link">
+                    <a href="{{ route('appIndex') }}" class="pc-link">
                         <span class="pc-micon">
                         <svg class="pc-icon">
                             <use xlink:href="#dashboard"></use>
@@ -21,7 +21,7 @@
                 </li>
 
                 <li class="pc-item">
-                    <a  href=" {{ route('clienteIndex') }}" class="pc-link">
+                    <a  href="{{ route('clienteIndex') }}" class="pc-link">
                         <span class="pc-micon">
                             <svg class="pc-icon">
                                 <use xlink:href="#user"></use>
