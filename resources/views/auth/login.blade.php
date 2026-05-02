@@ -100,6 +100,13 @@
                 <button type="submit" class="btn btn-primary">
                     Iniciar sesión
                 </button>
+
+                @if (Route::has('password.request'))
+                  <a class="form-label mt-2" href="{{ route('password.request') }}">
+                    Olvidaste tu constraseña?
+                  </a>
+                @endif
+
               </div>
               <div class="saprator mt-3">
                 <span>Login with</span>
